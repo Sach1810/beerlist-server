@@ -1,5 +1,5 @@
 var BeerDetailView = Backbone.View.extend({
-  tagName: 'reviews-container-inner',
+  className: 'reviews-container-inner',
 
   template: Handlebars.compile($('#beer-detail-template').html()),
 
@@ -10,7 +10,6 @@ var BeerDetailView = Backbone.View.extend({
   initialize: function () {
     this.listenTo(this.model.get('reviews'), 'add', this.addReview);
     this.listenTo(this.model.get('reviews'), 'reset', function() {
-      this.renderReviews();
       this.render();
     });
   },

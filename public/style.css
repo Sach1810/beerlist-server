@@ -74,3 +74,7 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.reviews-container, .beers-container, .register-container {
+  display: none;
+}
